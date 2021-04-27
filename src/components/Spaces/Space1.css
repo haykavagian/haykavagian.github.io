@@ -1,0 +1,44 @@
+.Space1-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  height: 60vh;
+  background: url(../../img/img6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.Space-bg div {
+  margin: 0;
+ 
+}
+
+.Space-bg .text p {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  
+}
+
+.Space-bg .text .adams {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 950px){
+  .Space1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    background: url(../../img/img6-2.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-attachment: scroll;
+  }
+}

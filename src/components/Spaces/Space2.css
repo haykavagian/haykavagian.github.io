@@ -1,0 +1,30 @@
+.Space2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    height: 60vh;
+    background: url(../../img/img9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+  }
+  
+  .Space2-bg div {
+    margin: 0;
+   
+  }
+  
+  .Space2-bg .text p {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    
+  }
+  
+  .Space2-bg .text .adams {
+    font-size: 2rem;
+  }

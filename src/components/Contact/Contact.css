@@ -1,0 +1,153 @@
+.Contact-container{
+    background: #1c2e3b;
+    display: relative;
+    justify-content: center;
+    /* align-items: center; */
+    height: 80vh; 
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+/* .Contact-container div {
+    border: red 1px solid;
+} */
+.Contact-container .Title{
+    display: flex;
+    justify-content: center;
+}
+.Contact-container .Title h1{
+    font-weight: 300;
+    font-size: 2rem;
+    height: 10vh;
+    padding: 10px;
+    align-items: center;
+}
+.Contact-container .Details {
+    display: flex;
+    flex-direction: column;
+}
+.Contact-container .Details .Detail-title {
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.Contact-container .Details .Detail-body {
+    display: flex;
+    flex-direction: row;
+}
+.Contact-container .Details .Input {
+    flex: 1;
+    height: 60vh;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.Contact-container .Details .Info {
+    flex: 1;
+    height: 60vh;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    
+
+}
+.Contact-container .Details .Input input {
+    display: block;
+    /* padding: 5vh auto; */
+    /* justify-content: center; */
+    width: 400px;
+    /* text-align: center; */
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+
+}
+.Contact-container .Details .Input .Message {
+    height: 200px;
+}
+.Contact-container .Details .Input button{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    width: 200px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    height: 25px;
+    font-family: 'Poiret One', cursive;
+    font-size: 1rem;
+
+}
+.Contact-container .Details .Info {
+    text-align: left;
+}
+.Contact-container .Details .Info div{    
+    margin-top: 15px;
+    
+}
+.Contact-container .Details .Info i {
+    margin-right:20px;
+}
+
+.Contact-container .Details .Info .Address {
+    display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.Contact-container .Details .Info .Email {
+    display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.Contact-container .Details .Info .Phone {
+    display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.Contact-container .Details .Info .Social-network i{
+  margin-right: 20px;
+}
+
+
+
+
+@media screen and (max-width: 950px){
+    .Contact-container .Details .Input {
+        width: 100vw;
+    }
+    .Contact-container .Details .Input input {
+        display: block;
+        /* padding: 5vh auto; */
+        /* justify-content: center; */
+        width: 80%;
+        /* text-align: center; */
+        margin-top: 10px;
+        height: 30px;
+        border-radius: 5px;
+    
+    }
+    .Contact-container .Details .Detail-body {
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact-container .Title {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .Details .Info {
+        padding-top: 25px;
+        border: red solid 2px;
+    }
+  }
+  

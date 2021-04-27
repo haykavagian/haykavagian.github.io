@@ -1,0 +1,78 @@
+.Nav-container{
+    font-family: 'Poiret One', cursive;
+    display: flex;    
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    justify-content: center;
+    height: 80px;
+    transition: all 0.4s ease-in-out;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+nav h2 {
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: gray;
+    /* display: flex; */
+    /* flex: 2; */
+}
+nav h2 span{
+    color: rgb(180, 180, 180);
+}
+
+nav ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul  a{
+    text-decoration: none;
+    padding: 2rem;
+    color: white;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+
+}
+
+nav ul li > .active {
+    color:rgb(179, 179, 179);
+}
+
+.Nav-container.active {
+    background: rgb(20, 20, 20);
+    transition: all 0.4s ease-in-out;
+    
+}
+
+@media screen and (max-width: 950px) {
+    .Nav-container {
+        display: flex;
+        width: 100vw;
+        height: 50px;
+        /* border: rgb(217, 255, 0) solid 2px; */
+    }
+    .Nav-container ul{
+        display: none;
+    }
+    .Nav-container nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* align-items: center; */
+        /* border: rgb(242, 242, 250) solid 1px; */
+    }
+    .Nav-container nav h2 {
+        /* border: red solid 1px; */
+    }
+}
