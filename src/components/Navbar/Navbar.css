@@ -9,6 +9,11 @@
     height: 80px;
     transition: all 0.4s ease-in-out;
 }
+.Nav-container .hamburger{
+    display: none;
+    width: 35px;
+    height: 35px;
+}
 
 nav{
     display: flex;
@@ -62,9 +67,7 @@ nav ul li > .active {
         height: 50px;
         /* border: rgb(217, 255, 0) solid 2px; */
     }
-    .Nav-container ul{
-        display: none;
-    }
+    
     .Nav-container nav{
         display: flex;
         flex-direction: row;
@@ -74,5 +77,67 @@ nav ul li > .active {
     }
     .Nav-container nav h2 {
         /* border: red solid 1px; */
+    }
+    /* .Nav-container ul{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        background-color: red ;
+        transition: ease .5s;
+    } */
+    .Nav-container .hamburger{
+        display: flex;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+    }
+    .Nav-container .close{
+        display: flex;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+    }
+    .Nav-container .hidden-menu{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: -100vw;
+        top: 0;
+        transition: ease .5s;
+        background-color: rgba(26, 26, 26, 0.98) ;
+        padding-top: 50px;
+    }
+    .Nav-container .active-menu{
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        transition: ease .5s;
+        background-color: rgba(26, 26, 26, 0.98) ;
+        padding-top: 50px;
+    }
+    .active-menu li{
+        padding: 10px 0;
+    }
+    .active-menu li a{
+        padding: 10px 30px;
+    }
+    .hidden-menu li{
+        padding: 10px 0;
+    }
+    .hidden-menu li a{
+        padding: 10px 30px;
+    }
+    .active-h2 {
+        display: none;
+        transition: ease-in-out .2s;
+    }
+    nav ul li > .active {
+        color:rgb(124, 122, 122);
     }
 }

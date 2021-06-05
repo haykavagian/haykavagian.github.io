@@ -194,7 +194,7 @@
     left: -20px;
     width: 0;
     height: 1px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transform-origin: left;
     transition:  .3s ease-in-out;
     transition-delay: .3s;

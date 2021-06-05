@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    /* height: 200px; */
     height: 60vh;
     background: url(../../img/img9.jpg);
     background-size: cover;
@@ -27,4 +27,30 @@
   
   .Space2-bg .text .adams {
     font-size: 2rem;
+  }
+
+
+  @media screen and (max-width: 950px) {
+    .Space2-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* height: 200px; */
+      
+      background: url(../../img/img9.jpg);
+      background-size: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      /* background-attachment: fixed; */
+      /* position: relative; */
+      height: 34vh;
+      /* border: red solid 1px; */
+    }
+    .Space2-bg .text p {
+      font-family: 'Great Vibes', cursive;
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+      
+    }
   }

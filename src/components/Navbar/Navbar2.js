@@ -1,6 +1,7 @@
 import './Navbar2.css'
-import { Link, animateScroll as scroll } from 'react-scroll'
-import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import hamburger from '../../img/ham.png'
 
 
 function  Navbar()  {
@@ -19,66 +20,15 @@ function  Navbar()  {
     return(
             <div className={navbar ? 'Nav-container2 active2' : 'Nav-container2'}>
                 <nav>
-                    <h2><Link
-                            activeClass="active"
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        ><span>HAYK</span>  AVAGYAN</Link></h2>
+                    <h2><Link to='/'><span className="hayk">HAYK</span> <span className="avagyan">AVAGYAN</span> </Link></h2>
                     <ul>
-                    <li><Link
-                            activeClass="active"
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >HOME</Link></li>
-                        <li><Link
-                            activeClass="active"
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            >EVENTS</Link>
-                        </li>
-                        <li><Link
-                            activeClass="active"
-                            to="gallery"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >PORTRAITS</Link>
-                        </li>
-                        <li><Link
-                            activeClass="active"
-                            to="about"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >MATERNITY</Link>
-                        </li>
-                        <li><Link
-                            activeClass="active"
-                            to="about"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >PRODUCT</Link>
-                        </li>
-                        
-                        
-                        
-                        
-                        
-                   
+                        <li><Link to='/'>HOME</Link></li>
+                        <li><Link to='/'>EVENTS</Link></li>
+                        <li><Link to='/'>PORTRAITS</Link></li>
+                        <li><Link to='/'>MATERNITY</Link></li>
+                        <li><Link to='/'>DETAILS</Link></li>                    
                     </ul>
+                    <img className="hamburger" src={hamburger} alt=""/>
                 </nav>
             </div>
     )

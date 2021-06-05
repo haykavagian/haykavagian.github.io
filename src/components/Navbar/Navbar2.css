@@ -9,7 +9,11 @@
     height: 80px;
     transition: all 0.2s ease-in-out;
 }
-
+.Nav-container2 .hamburger{
+    display: none;
+    width: 35px;
+    height: 40px;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -18,17 +22,22 @@ nav{
     align-items: center;
 }
 
-
+nav a{
+    text-decoration: none;
+}
 
 nav h2 {
     letter-spacing: 3px;
     cursor: pointer;
-    color: gray;
+    color: rgb(116, 116, 116);
     /* display: flex; */
     /* flex: 2; */
 }
-nav h2 span{
-    color: rgb(180, 180, 180);
+nav h2 .hayk{
+    color:#b4b4b4;
+}
+nav h2 .avagyan{
+    color: #808080;
 }
 
 nav ul {
@@ -74,5 +83,11 @@ nav ul li > .active {
     }
     .Nav-container2 nav h2 {
         /* border: red solid 1px; */
+    }
+    .Nav-container2 .hamburger{
+        display: flex;
+        position: fixed;
+        top: 5px;
+        right: 5px;
     }
 }

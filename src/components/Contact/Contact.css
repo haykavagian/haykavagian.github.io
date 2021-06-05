@@ -122,8 +122,23 @@
 
 
 @media screen and (max-width: 950px){
+    .Contact-container{
+        background: #1c2e3b;
+        display: relative;
+        justify-content: center;
+        /* align-items: center; */
+        height: 100vh; 
+        position: relative;
+        z-index: 1;
+        color: #fff;
+    }
     .Contact-container .Details .Input {
         width: 100vw;
+        height: 320px;
+        /* border: red solid 1px; */
+    }
+    .Contact-container .Details{
+        
     }
     .Contact-container .Details .Input input {
         display: block;
@@ -145,9 +160,18 @@
         justify-content: center;
         padding-top: 10px;
     }
-    .Details .Info {
-        padding-top: 25px;
-        border: red solid 2px;
+    .Contact-container .Details .Info {
+        /* flex: 1; */
+        padding-top: 30px;
+        height: 25%;
+        /* margin: auto auto; */
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        /* border: red solid 1px; */
+        text-align: center;
+    
     }
   }
   
